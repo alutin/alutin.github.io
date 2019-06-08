@@ -57,7 +57,7 @@
 
 				var $sticked = $sticky.clone().addClass(stickedClass).removeClass(stickyClass).insertAfter('.' + stickyClass);
 
-				$(window).on("scroll", function(e) {
+				$(window).on("scroll resize", function(e) {
 
 					var stickyOffsetTop = $sticky.parent().offset().top; 
 					var currentScrollPos = $(document).scrollTop(); 
@@ -76,7 +76,7 @@
 							"position": "fixed",
 							"z-index": stickedzIndex, 
 							"top": "0",
-							"right": ( $sticky ).parent().hasClass('nested') ? $('.sticky').parent().offset().left - 20 : $('.sticky').parent().offset().left // Adjust the position in case the sidebar is in a nested column
+							"left": ( $sticky ).parent().hasClass('nested') ? $('.sticky').parent().offset().left - 20 : $('.sticky').parent().offset().left // Adjust the position in case the sidebar is in a nested column
 						});
 
 					} else {
