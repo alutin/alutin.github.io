@@ -76,7 +76,7 @@
 							"position": "fixed",
 							"z-index": stickedzIndex, 
 							"top": "0",
-							"left": ( $sticky ).parent().hasClass('nested') ? $('.sticky').parent().offset().left - 20 : $('.sticky').parent().offset().left // Adjust the position in case the sidebar is in a nested column
+							"right": ( $sticky ).parent().hasClass('nested') ? $('.sticky').parent().offset().left - 20 : $('.sticky').parent().offset().left // Adjust the position in case the sidebar is in a nested column
 						});
 
 					} else {
