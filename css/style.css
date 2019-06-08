@@ -65,7 +65,7 @@ h5,
 h6 { font-weight: bold; }
 
 .first-row h3:hover {text-decoration: underline;}
-
+.padding-img {padding-top: 14px;}
 /* Links */
 a,
 a:visited {
