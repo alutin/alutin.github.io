@@ -57,7 +57,7 @@
 
 				var $sticked = $sticky.clone().addClass(stickedClass).removeClass(stickyClass).insertAfter('.' + stickyClass);
 
-				$(window).on("scroll resize", function(e) {
+				$(window).on("scroll", function(e) {
 
 					var stickyOffsetTop = $sticky.parent().offset().top; 
 					var currentScrollPos = $(document).scrollTop(); 
