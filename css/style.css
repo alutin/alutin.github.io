@@ -64,7 +64,7 @@ h4,
 h5,
 h6 { font-weight: bold; }
 
-
+.first-row h3:hover {text-decoration: underline;}
 
 /* Links */
 a,
@@ -75,7 +75,7 @@ a:visited {
 }
 
 a:hover,
-a:focus { color: black; }
+a:focus { color: black; text-decoration: underline;}
 p a,
 p a:visited { line-height: inherit; }
 
@@ -847,7 +847,7 @@ b, strong { font-weight: bold; }
 			}
 			#works.single .box-info h4 {
 				font-size: 11px; 
-				line-height: 21px; 
+				line-height: 11px; 
 				text-transform: uppercase; 
 				letter-spacing: 3px; 
 			}
