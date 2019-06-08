@@ -590,7 +590,7 @@ b, strong { font-weight: bold; }
 	#header p.site-desc {
 		color: #666;
 		font-size: 12px;
-		line-height: 11px;
+		line-height: 1px;
 	}
 
 
