@@ -64,7 +64,9 @@ h4,
 h5,
 h6 { font-weight: bold; }
 
-.first-row h3:hover {text-decoration: underline;}
+.first-row h3:hover {text-decoration: underline; color: #666;}
+.first-row h3.active {color: #666;}
+.first-row h3.active:hover  {text-decoration: none;}
 .padding-img {padding-top: 14px;}
 /* Links */
 a,
@@ -75,7 +77,7 @@ a:visited {
 }
 
 a:hover,
-a:focus { color: black; text-decoration: underline;}
+a:focus { color: #666; text-decoration: underline;}
 p a,
 p a:visited { line-height: inherit; }
 
@@ -728,7 +730,7 @@ b, strong { font-weight: bold; }
 			font-weight: bold;
 		}
 
-		#works a.permalink:hover h3 { text-decoration: underline; }
+		#works a.permalink:hover h3 { text-decoration: underline; color: #666; }
 
 	#works .item span.category {
 		color: #666;
