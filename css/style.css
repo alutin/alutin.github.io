@@ -63,9 +63,10 @@ h3,
 h4,
 h5,
 h6 { font-weight: bold; }
+#header .first-row h3 {border-bottom: 1px solid #000;}
 .first-row h3 {color: #000;}
 .first-row h3:hover {text-decoration: underline; color: #666;}
-.first-row h3.active {color: #666;}
+#header .first-row h3.active {color: #666; border-bottom: none;}
 .first-row h3.active:hover  {text-decoration: none;}
 .padding-img {padding-top: 14px;}
 /* Links */
