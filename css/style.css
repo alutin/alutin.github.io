@@ -47,7 +47,8 @@ body {
 	}
 }
 
-
+.flex-container {  display: flex;
+      flex-flow: row wrap;  align-items: baseline;  align-content: space-between;}
 
 
 
