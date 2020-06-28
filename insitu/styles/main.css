@@ -11,7 +11,6 @@ html {
 body {
     background: #fff;
     font-family: 'Roboto Mono', monospace;
-    height: 100%;
 }
 #menu a {
 font-family: 'Roboto Mono', monospace;
@@ -365,9 +364,10 @@ margin: 50px auto; width: 100%; padding-left: 90px;
     width: 100%;
 }
 @media only screen and (max-width: 1024px) {
-#main-footer {clear: both;
-    position: fixed;
+#main-footer {
+    position: static;
     height: 300px;
+    margin-top: 50px;
 }
 }
 .custom-accordion {
