@@ -202,15 +202,15 @@ h1 {font-size: 2.3rem !important;}
 @media only screen and (max-width: 600px) {
 h1 {font-size: 1.7rem !important;}
 #main-description {
-margin: 50px auto; width: 100%; padding-left: 50px;
+margin: 20px auto; width: 100%; padding-left: 50px;  padding-bottom: 300px; 
 }
 }
 @media only screen and (min-width: 601px) {
 #main-description {
-margin: 50px auto; width: 100%; padding-left: 90px;
+margin: 20px auto; width: 100%; padding-left: 90px;  padding-bottom: 300px; 
 }
 }
-#main-content {width: 75%; position: absolute;}
+#main-content {width: 75%; position: absolute; min-height: 100vh;}
 /*Logo and top navigation bar*/
 .topnav {
   width: 100%;
@@ -350,14 +350,12 @@ margin: 50px auto; width: 100%; padding-left: 90px;
 .topnav #nav-lists img {width: 20px; height: 20px; margin-top: 20px;}
 .space40 {width: 40px;}
 /*End logo and topnav*/
-
-
 #main-footer {
   width: 100%;
   height: 300px;
-  position: fixed;
+  position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 44px;
   text-align: center;
 }
 #main-footer img {
