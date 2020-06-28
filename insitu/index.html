@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>На своём месте</title>
+<link href="styles/main.css" rel="stylesheet">
+	<base href="">
+</head>
+<body>
+<div id="main-content">
+<div class="topnav">
+    <div class="logo">
+        <a href="#"><img src="images/main-logo.png" alt="logo"></a>
+    </div>
+<div class="navbar">
+<ul id="nav-lists">
+    <li><a href="#">EN</a></li>
+    <li class="space40"></li>
+    <li><a href="#"><img class="icon" src="images/social/instagram.svg"></a></li>
+    <li><a href="#"><img class="icon" src="images/social/facebook.svg"></a></li>
+    <li><a href="#"><img class="icon" src="images/social/email.svg"></a></li>
+</ul>
+</div>
+</div>
+    <div id="main-description">
+        <div id="Main" class="center tabcontent"><h1 id="uppercase">Проект-исследование<br>о месте художественных<br>мастерских в Москве</h1>
+            <div id="main-footer"><img src="images/main/footer.png"></div></div>
+        <div id="Projects" class="center tabcontent" style="position: fixed; right: 0; top: 0; min-width: 100%; z-index: -1;"><img src="images/main/projects.png" width="75%"></div>
+        <div id="Idea" class="center tabcontent" style="position: fixed; right: 0; top: 0; min-width: 100%; z-index: -1;"><img src="images/main/idea.png" width="75%"></div>
+        <div id="Research" class="center tabcontent" style="position: fixed; right: 0; top: 0; min-width: 100%; z-index: -1;"><img src="images/main/research.png" width="75%"></div>
+        <div id="Poll" class="center tabcontent"><h1>Есть ли у вас <br>мастерская?</h1>
+        <table style="margin-top: 50px;" width="100%"><tr><td width="50%"><h4>78</h4><h5>%</h5></td><td width="50%"><h4>36</h4><h5>%</h5></td></tr>
+        <tr><td class="mini">опрошенных считают, <br>что художнику необходима<br> мастерская</td><td class="mini">художников имеет мастерскую <br>в данный момент</td></tr></table></div>
+    </div>
+</div>
+<nav role='navigation'>
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Проекты</li></a>
+      <a href="#"><li>Идея</li></a>
+      <a href="#"><li>Исследование</li></a>
+      <a href="#"><li>Опрос</li></a>
+    </ul>
+  </div>
+</nav>
+<div class="custom-accordion tab">
+<div class="item tablinks" onmouseover="openTab(event, 'Projects')" onmouseout="closeTab(event, 'Main')">
+<div class="title">
+<div class="text uppercase">Проекты</div>
+</div>
+<div class="content">В рамках проекта «На своём месте» австрийские,российские и французские художники исследуют, что значит быть внимательным к месту — каким образом должна строиться наша коммуникация с пространством и окружением, рядом с которым мы оказались.</div>
+</div>
+
+<div class="item tablinks" onmouseover="openTab(event, 'Idea')" onmouseout="closeTab(event, 'Main')">
+<div class="title">
+<div class="text uppercase">Идея</div>
+</div>
+<div class="content">В рамках проекта мы решили выяснить, насколько авторам важно место расположения мастерской? Что они знают о районе, в котором работают, и его окружении? Насколько расположение мастерской влияет на сами произведения?</div>
+</div>
+
+<div class="item tablinks" onmouseover="openTab(event, 'Research')" onmouseout="closeTab(event, 'Main')">
+<div class="title">
+<div class="text uppercase">Исследование</div>
+</div>
+<div class="content">Отправной точкой проекта стало исследование проблематики художественных мастерских Москвы. Кураторы общались с художниками и представителями московских профсоюзов, чтобы выяснить современный статус и функцию мастерской.</div>
+</div>
+
+<div class="item tablinks" onmouseover="openTab(event, 'Poll')" onmouseout="closeTab(event, 'Main')">
+<div class="title">
+<div class="text uppercase">Опрос</div>
+</div>
+<div class="content">Мы предлагаем вам пройти опрос, чтобы вместе узнать, насколько для художников важно иметь свою мастерскую в городе, кто может позволить снимать ее самостоятельно, и нужна ли для этого система господдержки.<br><br><a class="button is-outlined uppercase" href="#">Пройти опрос</a></div>
+</div>
+
+</div>
+<script src="scripts/tab.js"></script>
+</body></html>
