@@ -60,13 +60,18 @@ h6 {
     font-size: 90%;
 }
 @media only screen and (min-width: 1025px) {
-#menuToggle
+#menuToggle, .onlymobile
 {
   display: none !important;
 }
 }
 @media only screen and (max-width: 1024px) {
 .custom-accordion {display: none !important;}
+.space16p {display: none !important;}
+#inner-content, .inside-content {width: 100% !important;}
+.flexicons {display: flex; width: 100%; align-items: center; flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
+.project-icon {flex-basis: 50% !important;}
+.project-icon img {max-width: 75%; flex-shrink: 1; padding: 20px;}
 h1 {font-size: 2.8rem !important;}
 #menuToggle
 {
@@ -74,13 +79,11 @@ h1 {font-size: 2.8rem !important;}
   position: absolute;
   top: 40px;
   right: 20px;
-  
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
+  -ms-user-select: none;
 }
-
 #menuToggle input
 {
   display: block;
@@ -97,7 +100,6 @@ h1 {font-size: 2.8rem !important;}
   
   -webkit-touch-callout: none;
 }
-
 /*
  * Just a quick hamburger
  */
@@ -108,14 +110,10 @@ h1 {font-size: 2.8rem !important;}
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
   background: #000;
   border-radius: 3px;
-  
   z-index: 1;
-  
   transform-origin: 4px 0px;
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -182,7 +180,6 @@ h1 {font-size: 2.8rem !important;}
   text-align: right;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-
 #menu li
 {
   padding: 10px 0;
@@ -193,6 +190,37 @@ h1 {font-size: 2.8rem !important;}
   transform: none;
   opacity: 1;
 }
+
+
+
+
+
+
+.topnav #myLinks {
+
+  padding-top: 16px;
+  font-size: 1.3rem !important;
+}
+.topnav a {
+  float: left;
+  padding: 14px 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+
+
+.topnav a:hover {
+  color: #d4515b;
+}
+
+.active {
+  color: #d4515b;
+}
+}
+@media only screen and (min-width: 1025px) {
+.topnav #myLinks { display: none;}
 }
 @media screen and (max-width: 768px) {
   #menu {
@@ -208,13 +236,27 @@ h1 {font-size: 1.7rem !important;}
 #main-description {
 margin: 50px auto; width: 100%; padding-left: 50px;
 }
+#inside-description {
+width: 100%; padding-left: 20px;
+}
 }
 @media only screen and (min-width: 601px) {
 #main-description {
 margin: 50px auto; width: 100%; padding-left: 90px;
 }
+#inside-description {
+width: 100%; padding-left: 20px;
+}
 }
 #main-content {width: 75%; position: absolute;}
+#inner-content {width: 81.25%; position: absolute;}
+#Main {width: 100%;}
+#Poll {margin: 50px auto;}
+.space16p {width: 16%; float:left;}
+.inside-content {width: 84%; float: left;}
+.flexicons {display: flex; width: 84%; align-items: center; flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
+.project-icon {flex-basis: 33%;}
+.project-icon img {max-width: 75%; flex-shrink: 1; padding: 20px;}
 /*Logo and top navigation bar*/
 .topnav {
   width: 100%;
@@ -234,7 +276,9 @@ margin: 50px auto; width: 100%; padding-left: 90px;
   padding: 20px 20px;
   overflow: hidden;
 }
-
+.topnav .logo-min {    
+  width: 16%;
+}
 .topnav .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,7 +293,6 @@ margin: 50px auto; width: 100%; padding-left: 90px;
 
 .topnav .logo a img {
   max-width: 100%;
-
 }
 
 .topnav .navbar {
@@ -265,7 +308,20 @@ margin: 50px auto; width: 100%; padding-left: 90px;
   justify-content: flex-end;
 }
 
-.topnav .navbar ul {
+.topnav .crumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 10px;
+  justify-content: flex-start;
+}
+
+.topnav .navbar ul, .topnav .crumbs ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,8 +343,22 @@ margin: 50px auto; width: 100%; padding-left: 90px;
   padding: 0 10px;
   font-weight: 700;
 }
-
-.topnav .navbar ul li a:hover {
+ .topnav .crumbs ul li a {
+  text-decoration: none;
+  color: #7a7a7a;
+  text-transform: lowercase;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  padding: 0 10px;
+  font-weight: 400;
+}
+ .topnav .crumbs ul li a.active {
+  color: #d4515b !important;
+  cursor: default;
+}
+.topnav .navbar ul li a:hover, .topnav .crumbs ul li a:hover {
   color: #d4515b;
 }
 @media only screen and (max-width: 1024px) {
@@ -302,15 +372,23 @@ margin: 50px auto; width: 100%; padding-left: 90px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    flex-shrink: 0;
+  }
+    .topnav .logo-min {
+
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    flex-shrink: 0;
   }
 
-  .topnav .navbar {
+  .topnav .navbar, .topnav .crumbs {
     -webkit-box-flex: 0;
     -ms-flex: 0;
     flex: 0;
   }
 
-  .topnav .navbar ul {
+  .topnav .navbar ul, .topnav .crumbs ul {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     position: fixed;
@@ -328,7 +406,7 @@ margin: 50px auto; width: 100%; padding-left: 90px;
     transition: left .3s;
   }
 
-  .topnav .navbar ul li a {
+  .topnav .navbar ul li a, .topnav .crumbs ul li a {
     padding: 10px;
     height: auto;
     line-height: normal;
@@ -336,23 +414,24 @@ margin: 50px auto; width: 100%; padding-left: 90px;
     font-weight: 700;
   }
 
-  .topnav .navbar ul .close {
+  .topnav .navbar ul .close, .topnav .crumbs ul .close {
     display: block;
   }
 
-  .topnav .navbar .icon-bar {
+  .topnav .navbar .icon-bar, .topnav .crumbs .icon-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     color: #000;
   }
 
-  .topnav .navbar ._Menus-show {
+  .topnav .navbar ._Menus-show, .topnav .crumbs ._Menus-show {
     left: 0;
   }
 }
 .topnav #nav-lists img {width: 20px; height: 20px; margin-top: 20px;}
 .space40 {width: 40px;}
+.space100 {justify-content: flex-start !important;}
 /*End logo and topnav*/
 
 
@@ -402,6 +481,9 @@ margin: 50px auto; width: 100%; padding-left: 90px;
     max-height: 1000px;
     overflow: hidden;
     padding-bottom: 0;
+  }
+.custom-accordion-inside {
+    width: 18.75% !important;
   }
 .custom-accordion > .item {
     display: table-cell;
@@ -528,3 +610,10 @@ margin: 50px auto; width: 100%; padding-left: 90px;
 #Main { 
   display: block;
 }
+
+
+
+
+
+
+
