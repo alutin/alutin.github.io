@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+        text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+    -moz-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
 }
 html {
     line-height: 1.5;
@@ -191,20 +195,26 @@ h1 {font-size: 2.8rem !important;}
   opacity: 1;
 }
 
-
-
-
-
-
+/*MOBILE*/
+.logo-min {display: none;}
+.topnav {width: 100% !important;}
 .topnav #myLinks {
-
+  width: 100% !important;
+  display: flex;
+  align-items: center; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  align-content: space-around;
   padding-top: 16px;
   font-size: 1.3rem !important;
+}
+.topnav #myLinks .myLogo {
+
 }
 .topnav a {
   float: left;
   padding: 14px 14px;
-  text-decoration: none;
+
   text-transform: uppercase;
   color: #000;
 }
