@@ -16,18 +16,6 @@ body {
     background: #fff;
     font-family: 'Roboto Mono', monospace;
 }
-#menu a {
-font-family: 'Roboto Mono', monospace;
-text-transform: uppercase;
-text-decoration: none;
-color: #000;
-}
-#menu a:hover, #menu a:focus, #menu a:active {
-font-family: 'Roboto Mono', monospace;
-text-transform: uppercase;
-text-decoration: none;
-color: #d4515b;
-}
 img.icon:hover {filter: invert(52%) sepia(55%) saturate(6274%) hue-rotate(330deg) brightness(93%) contrast(76%) !important;}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Mono', monospace;
@@ -63,22 +51,16 @@ h6 {
     color: #7a7a7a;
     font-size: 90%;
 }
-@media only screen and (min-width: 1025px) {
-#menuToggle, .onlymobile
-{
-  display: none !important;
-}
-}
 @media only screen and (max-width: 1024px) {
-.custom-accordion {display: none !important;}
+.custom-accordion, .onlydisplay {display: none !important;}
 .space16p {display: none !important;}
 #inner-content, .inside-content, #main-content {width: 100% !important;}
 .flexicons {display: flex; width: 100%; align-items: center; flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
 .project-icon {flex-basis: 50% !important;}
 .project-icon img {max-width: 75%; flex-shrink: 1; padding: 20px;}
 h1 {font-size: 2.8rem !important;}
-/*MOBILE*/
-.logo-min, .logo {display: none;}
+/*MOBILE NAV*/
+.logo-min, .logo {display: none !important;}
 .topnav {width: 100% !important;}
 .topnav .myLinks {
   width: 100% !important;
@@ -116,9 +98,9 @@ h1 {font-size: 2.8rem !important;}
 h1 {font-size: 2.3rem !important;}
 }
 @media only screen and (max-width: 600px) {
-h1 {font-size: 1.7rem !important;}
+h1 {font-size: 1.7rem !important; width: 100%; text-align: center}
 #main-description {
-margin: 50px auto; width: 100%; padding-left: 50px;
+margin: 50px auto; width: 100%; 
 }
 #inside-description {
 width: 100%; padding-left: 20px;
@@ -134,7 +116,7 @@ width: 100%; padding-left: 20px;
 }
 #main-content {width: 75%; position: absolute;}
 #inner-content {width: 81.25%; position: absolute;}
-#Main {width: 100%;}
+#main-footer {position: relative !important; margin-top: 50px;}
 #Poll {margin: 50px auto;}
 .space16p {width: 16%; float:left;}
 .inside-content {width: 84%; float: left;}
@@ -330,13 +312,6 @@ width: 100%; padding-left: 20px;
 #main-footer img {
     width: 100%;
 }
-@media only screen and (max-width: 1024px) {
-#main-footer {
-    position: static;
-    height: 300px;
-    margin-top: 50px;
-}
-}
 .custom-accordion {
     background: #fff;
     color: #000;
@@ -494,10 +469,3 @@ width: 100%; padding-left: 20px;
 #Main { 
   display: block;
 }
-
-
-
-
-
-
-
