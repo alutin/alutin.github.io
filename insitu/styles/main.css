@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -17,6 +17,7 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 img.icon:hover {filter: invert(52%) sepia(55%) saturate(6274%) hue-rotate(330deg) brightness(93%) contrast(76%) !important;}
+.clear {clear: both;}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;
@@ -25,6 +26,19 @@ h1 {
     color: #000;
     font-size: 3.6rem;
     font-weight: 400;
+}
+h2 {
+    color: #000;
+    font-size: 3.2rem;
+    font-weight: 300;
+    padding: 0 0 48px 0;
+}
+h3 {
+    padding: 24px 0 0 0;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 300;
+    
 }
 h4 {
     color: #d4515b;
@@ -125,6 +139,10 @@ width: 100%; padding-left: 20px;
 .project-icon img {max-width: 75%; flex-shrink: 1; padding: 20px;}
 /*Logo and top navigation bar*/
 .topnav {
+  background-color: #fff;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,6 +331,7 @@ width: 100%; padding-left: 20px;
     width: 100%;
 }
 .custom-accordion {
+    position: fixed !important;
     background: #fff;
     color: #000;
     font-family: 'Roboto Mono', monospace;
@@ -469,3 +488,32 @@ width: 100%; padding-left: 20px;
 #Main { 
   display: block;
 }
+#cover img, #profile img {
+    max-width: 100%;
+    padding-right: 40px;
+}
+.addinfo {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase !important;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 32px 0 112px 0;
+}
+.project-description {
+    font-size: 1.3rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    padding-right: 40px;
+}
+.profile-description {
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+.padding50-20 {padding: 50px 0 30px 0;}
+.padding20-20 {padding: 20px 0 20px 0;}
+.padding-b82 {padding: 0 0 82px 0;}
+.gallery {padding: 104px 0 104px 0;}
+.galleryimg img {width: 100%; padding: 0 20px 0 0 !important;}

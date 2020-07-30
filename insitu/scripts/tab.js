@@ -7,6 +7,12 @@ function openTab(evt, tabName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
+  
+    // Switch top navigation background to transparent
+  navcontent = document.getElementsByClassName("topnav");
+  for (i = 0; i < navcontent.length; i++) {
+    navcontent[i].style.background = "transparent";
+  }
 
   // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
@@ -27,6 +33,12 @@ function closeTab(evt, tabName) {
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
+  }
+  
+  // Switch top navigation back to white
+  navcontent = document.getElementsByClassName("topnav");
+  for (i = 0; i < navcontent.length; i++) {
+    navcontent[i].style.background = "white";
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
