@@ -136,7 +136,7 @@ width: 100%; padding-left: 20px;
 .inside-content {width: 84%; float: left;}
 .flexicons {display: flex; width: 84%; align-items: center; flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
 .project-icon {flex-basis: 33%;}
-.project-icon img {max-width: 75%; flex-shrink: 1; padding: 20px;}
+.project-icon img {max-width: 75%; flex-shrink: 1; padding: 20px; transition: transform .5s ease;}
 .project-icon img:hover {transform: scale(1.2);}
 /*Logo and top navigation bar*/
 .topnav {
