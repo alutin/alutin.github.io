@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 html {font-family: 'Courier Prime', monospace; background-color: #f2f2f2;  color: #000;}
 .flex-container {
-  /* We first create a flex layout context */
+ /* We first create a flex layout context */
   display: flex;
   
   /* Then we define the flow direction 
@@ -15,9 +15,8 @@ html {font-family: 'Courier Prime', monospace; background-color: #f2f2f2;  color
   /* Then we define how is distributed the remaining space */
   justify-content: space-evenly;
   align-content: space-evenly;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+   padding: 0;
+  margin: 0;  list-style: none;
 }
 
 .flex-item {
@@ -31,7 +30,12 @@ html {font-family: 'Courier Prime', monospace; background-color: #f2f2f2;  color
   max-width: 300px;
   max-height: 450px;
 }
-
+.flex-item-empty {
+padding: 5px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;    height:0; /*Important! for the divs to collapse should they fall in a new row*/
+}
 .small {font-size: 0.85rem;}
 .big {font-size: 1.3rem; font-weight: 700;}
 h1 {font-size: 1.2rem; font-weight: 400; margin:0; padding:0 0 10px 0; line-height: 1.5rem; width: 100%; text-align: center;}
