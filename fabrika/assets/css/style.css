@@ -78,7 +78,7 @@ h1, h2, h4, h6 {
 --------------------------------------------------------------*/
 .header-social-links {
   margin-left: 30px;
-  margin-top: 5px;
+  margin-top: 4px;
   padding: 0;
 }
 .header-social-links a, {
@@ -97,7 +97,6 @@ h1, h2, h4, h6 {
   font-size: 120% !important;
 }
 .header-social-links .lang, {
-  padding-top: 6px;
   font-size: 80%;
   font-color: #000;
 }
