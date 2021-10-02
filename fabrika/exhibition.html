@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ЦТИ Фабрика</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="container d-flex align-items-center">
+    <span class="mobile-lang"><a href="#" class="lang">eng</a></span>
+      <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/logo.svg" alt="" class="img-fluid"></a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+          <li class="mobileshow"><a class="logomobile" href="index.html"><img src="assets/img/logo2.svg" alt=""></a></li>
+          <li class="dropdown"><a href="#">Посетителям</a>
+          <ul>
+              <li><a href="#">Выставки</a></li>
+              <li><a href="#">События</a></li>
+              <li><a href="#">Пространства</a></li>
+              <li><a href="#">Резиденты</a></li>
+              <li><a href="#">Старая версия сайта</a></li>
+              <li><a href="#">Как добраться</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Художникам</span></a>
+            <ul>
+              <li><a href="#">Фабричные мастерские</a></li>
+              <li><a href="#">Artist-in-Residence</a></li>
+              <li><a href="#">Программы</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Резидентам</a>
+          <ul>
+              <li><a href="#">Пространства</a></li>
+              <li><a href="#">Стать резидентом</a></li>
+            </ul></li>
+          <li><a href="#">О Фабрике</a></li>
+          <li class="mobileshow"><a href="#" class="openBtn rightnav" onclick="openSearch()"><i class="bu bi-search search-toggle-mobile"></i> Поиск</a></li>
+          <li class="mobile-lang mobileshow"><a class="logomobile" href="#">eng</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <div class="header-social-links d-flex">
+        <a href="#" class="lang">eng</a>
+        <a href="#"  class="openBtn" onclick="openSearch()"><i class="bu bi-search search-toggle"></i></a>
+      </div>
+    </div>
+  </header>
+  <div id="myOverlay" class="overlay">
+  <i class="bi bi-list mobile-nav-toggle"></i>
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="bi bi-x"></i></span>
+  <div class="overlay-content">
+    <form action="#">
+      <input type="text" name="search">
+      <button type="submit">найти</button>
+    </form>
+  </div>
+</div>
+  <main id="main">
+    <section id="about-us" class="about-us">
+    <div style="background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(255, 255, 255, 1)), url('assets/img/templates/exhibition.png'); width: 80%; height: 400px; background-size: cover; color: white; padding: 20px; width: 100%;"></div>
+    <h2 class="header2"><span>«МОЕ МОРЕ» ТАНИ СУШЕНКОВОЙ</span></h2>
+      <div class="container">
+        <div class="row content">
+          <div class="col-lg-8 mainprojects">
+                <h4 class="header">Стр. 2, Зал 1</h4>
+            
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.<br>
+<h3>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</h3><br>
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.<br><br>
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          </div>
+          <div class="col-lg-4 mainprojects">
+           Даты работы: 26 ноября 2021 г. — 14 января 2022 г.<br>
+           Время работы: 12:00 — 20:00<br><br>
+           Адрес: Переведеновский переулок, д. 18, стр. 2, этаж 1<br><br>
+           <img src="assets/img/templates/olivier.png" style="max-width: 100%;" alt="">
+            
+            Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке соответствующий условий активизации.
+          </div>
+        </div>
+      </div>
+    </section>
+   
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-xs-6 footer-contact">
+            <h4>Адрес</h4>
+            <p>
+              105082, г. Москва,<br>
+              Переведеновский переулок, д. 18.<br><br>
+              Остановка транспорта «Бакунинская улица, 84»<br>
+              или «Балакиревский переулок»<br>
+            </p>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-xs-6 footer-links">
+            <h4>Транспорт</h4>
+            <p>
+              м. Бауманская /<br>
+              м. Электрозаводская:<br>
+              троллейбусы 22 и 88,<br>
+              автобусы Т25 и М3.<br><br>
+              м. Китай-город:<br>
+              автобусы Т25 и М3<br>
+            </p>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-6 footer-links">
+            <h4>Контакты</h4>
+            <p>
+            +7 (499) 265 39 26<br><br>
+            PR-отдел<br>
+            pr@fabrikacci.com<br><br>
+            Отдел аренды<br>
+            office@fabrikacci.com<br><br>
+            Выставки и мероприятия<br>
+            cci.fabrika@gmail.com
+            </p>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-6 footer-newsletter">
+            <h4>Часы работы выставочных залов</h4>
+            <p>
+            Со вторника по воскресенье<br>
+            12:00 — 20:00<br><br>
+            Вход на выставки свободный
+            </p>
+            <br><br> 
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
