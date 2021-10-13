@@ -97,3 +97,4 @@ width: 300px;
 height: 428px; 
 border: 1px #000 solid;
 }
+.sticky {position: sticky; top: 20px;}
