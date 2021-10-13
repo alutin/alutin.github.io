@@ -82,8 +82,7 @@ position: relative;
 .inside-photo {width: 100%; padding-top: 20px;}
 }
 @media only screen and (min-width: 636px) {
-.inside-text {  position: -webkit-sticky; /* Safari */
-  position: sticky;
+.inside-text {  
   top: 20; }
 }
 .upcoming {
